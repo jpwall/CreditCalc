@@ -19,7 +19,7 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: Montserrat, sans-serif;
-    background: #fff8e0;
+    //background: #fff8e0;
 }
 
 .fullWeb {
@@ -27,9 +27,22 @@ body, html {
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .centerWeb {
-    width: 65%;
-    //background: red;
+    width: 100%;
+    height: 90%;
+    background: #fff8e0;
+}
+
+.newCreditHeader {
+    width: 100%;
+    height: 10%;
+    background: blue;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
 }
