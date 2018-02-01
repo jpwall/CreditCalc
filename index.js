@@ -12,4 +12,4 @@ router.get('/data', function(req, res, netxt) {
   res.sendFile('src/data.json');
 });
 
-app.listen(4200, () => console.log('Listening on port 4200'));
+app.listen(100, () => console.log('Listening on port 100'));
