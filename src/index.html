@@ -4,8 +4,8 @@
     <meta charset=UTF-8>
     <title>CreditCalc</title>
     <link rel="stylesheet" type="text/css" href="style.css"></link>
-<!--    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
   </head>
   
   <body>
@@ -17,20 +17,13 @@
 	  <option value="16-17">2016-2017</option>
 	</select>
 	
-	<div class="logo"></div>
-	<!--
+	<div class="logo"></div>-->
+	
 	<select class="selectpicker" data-style="btn-info" data-live-search="true" name="course" data-width="55%">
-	  <optgroup label="English">
-	    <option>Course 1</option>
-	    <option>Course 2</option>
-	    <option>Course 3</option>
-	    </optgroup>
-	    <courses>
-
-	    </courses>
+	  <option>Select or search for a course</option>
+	  <!-- *REFER TO MAIN.JS CODE -->
 	</select>
-	-->
-	<input class="mainSearch" type="search" placeholder="year, grade, course"></input>
+	<!--<input class="mainSearch" type="search" placeholder="year, grade, course"></input>-->
 	<div class="button"><img src="images/plus.svg" width="30px"></img></div>
 	
       </div>
@@ -62,10 +55,23 @@
       
     </div>
     
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
-    <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>-->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
+    <script src="main.js">
+/*	var courseNames = [];$.ajax({
+	  url: "courseNames"
+	}).done(function (data) {
+	  courseNamesRaw = data + "";
+	  courseNames = courseNamesRaw.split(",");
+	  for (var i = 0; i < courseNames.length; i++) {
+	    $(".selectpicker").append("<option>" + courseNames[i] + "</option>");
+	  };
+*/	});
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
+
   </body>
 </html>
