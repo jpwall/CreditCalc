@@ -17,7 +17,7 @@ router.get('/data', function(req, res, next) {
 
 var courseNames = [];
 for (i = 0; i < data.length; i++) {
-  courseNames.push(data[i].course_name);
+  courseNames.push(data[i].coursename);
 }
 
 app.get('/courseNames', function(req, res) {
