@@ -34,21 +34,20 @@ var courseCredits = [];
 for (i = 0; i < data.length; i++) {
   courseCredits.push(data[i].credit);
 }
-/*
-function onlyUnique(value, index, self) { 
-    return self.indexOf(value) === index;
-}
-var separatedCredits = [];
-for (i = 0; i < courseCredits.length; i++) {
-  var itemSplit = [];
-  itemSplit = courseCredits[i].split(', ');
-  for (i = 0; i < itemSplit.length; i++) {
-    separatedCredits.push(itemSplit[i]);
-  }
-}*/
-//var allCredits = [];
-//allCredits = separatedCredits.filter(onlyUnique);
 
+var finalFiltered = [];
+var splitCredits = [];
+var filterCredits1 = [ ... new Set(courseCredits) ];
+for (i = 0; i < filterCredits1.length; i++) {
+  //var splitCredits = [];
+  splitCredits.push(filterCredits1[i].split(', '));
+}
+finalFiltered = [ ... new Set(splitCredits) ];
+console.log(splitCredits);
+/*
+var uniqueCredits = [... new Set(filteredCredits)];
+console.log(courseCredits);
+*/
 app.get('/courseNames', function(req, res) {
   res.send(courseNames);
 });
