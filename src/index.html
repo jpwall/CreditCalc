@@ -1,67 +1,76 @@
 <!DOCTYPE=html>
 <html>
-  <head>
-    <meta charset=UTF-8>
-    <title>CreditCalc</title>
-    <link rel="stylesheet" type="text/css" href="style.css"></link>
-    <link rel="stylesheet" type="text/css" href="include/bootstrap.min.css"></link>
-<link rel="stylesheet" href="include/bootstrap-select.min.css">
-  </head>
+
+<head>
+  <meta charset=UTF-8>
+  <title>CreditCalc</title>
+  <link rel="stylesheet" type="text/css" href="style.css"></link>
+  <link rel="stylesheet" type="text/css" href="include/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="include/bootstrap-select.min.css">
+</head>
+
+<body>
+  <div class="fullWeb">
+    <div class="newCreditHeader">
+      <!--
+  <select class="selectpicker" name="year">
+    <option value="17-18">2017-2018</option>
+    <option value="16-17">2016-2017</option>
+  </select>
   
-  <body>
-    <div class="fullWeb">
-      <div class="newCreditHeader">
-	<!--
-	<select class="selectpicker" name="year">
-	  <option value="17-18">2017-2018</option>
-	  <option value="16-17">2016-2017</option>
-	</select>
-	
-	<div class="logo"></div>-->
-	
-	<select class="selectpicker" data-style="btn-info" data-live-search="true" name="course" data-width="55%">
-	  <option>Select or search for a course</option>
-	  <!-- *REFER TO MAIN.JS CODE -->
-	</select>
-	<!--<input class="mainSearch" type="search" placeholder="year, grade, course"></input>-->
-	<div class="button"><img src="images/plus.svg" width="30px"></img></div>
-	
-      </div>
-      
-      <div class="centerWeb">
-	<div class="course" id="bigText">Design and Technology
-	  <div class="subCourse" id="normalText">
-	    <div class="credit">ART</div>
-	    <div class="info"><img src="images/info.svg" width="25px"></img></div>
-	    <div class="remove"><img src="images/remove.svg" width="27.5px" style="color:red;"></img></div>
-	  </div>
-	</div>
-	<div class="course">1</div>
-	<div class="course">2</div>
-	<div class="course">3</div>
-	<div class="course">4</div>
-	<div class="course">5</div>
-	<div class="course">6</div>
-	<div class="course">7</div>
-	<div class="course">8</div>
-	<div class="course">9</div>
-	<div class="course">10</div>
-	<div class="course">11</div>
-	<div class="course">12</div>
+  <div class="logo"></div>-->
+      <select class="selectpicker" data-style="btn-info" data-live-search="true" name="course" data-width="55%">
+        <option value="" selected disabled style="display:none; color:#ffffff;">Select or search for a course</option>
+        <!-- *REFER TO MAIN.JS CODE -->
+      </select>
+      <!--<input class="mainSearch" type="search" placeholder="year, grade, course"></input>-->
+      <button id="plusButton" type="button" class="" style="outline: none; border: none; text-decoration: none;"><i class="glyphicon glyphicon-plus" style="color: #000000; font-size: 36px; font-weight: 100;"></i></button>
+    </div>
+    <div class="centerWeb">
+      <div id="a">
+        <div id="b">
+        </div>
       </div>
     </div>
+  </div>
+  <div class="footer">
+  </div>
+  <script type="text/javascript" src="include/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="include/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="include/bootstrap-select.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
+  <script type="text/javascript">
+  var counter = 0;
+  var counter_1 = counter - 1;
+  var selectValue = null;
 
-    <div class="footer">
-      
-    </div>
-    
-    <script type="text/javascript" src="include/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="include/bootstrap.min.js"></script>
-    
-    <script type="text/javascript" src="js/main.js"></script>
 
-     <script type="text/javascript" src="include/bootstrap-select.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
+  $("#plusButton").click(function() {
+    // console.log("clicked")
+    selectValue = $(".selectpicker option:selected").text();
+    console.log(selectValue);
+    counter++;
+    counter_1++;
+    // console.log("counter_1", counter_1);
+    // console.log("counter", counter);
 
-  </body>
+    if (counter < 1) {
+      var searchBar = '<div class="course"> ' + selectValue + ' </div>';
+
+      $("#a").append(searchBar);
+    }
+
+    if (counter = 1) {
+      var searchBar = '<div class="course"> ' + selectValue + ' </div>';
+
+      $("#b").prepend(searchBar);
+
+
+    }
+  });
+
+  </script>
+</body>
+
 </html>

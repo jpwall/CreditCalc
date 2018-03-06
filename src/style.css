@@ -19,11 +19,11 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: Montserrat, sans-serif;
-//    background-color: #7a7a7a;
-//    color: white;
-//    background-color: #fffce8;
-//background-color: #fffcfc;
-background: #fefcff;
+/*    background-color: #7a7a7a;
+   color: white;
+    background-color: #fffce8;
+background-color: #fffcfc;
+background: #fefcff;*/
 color: black;
 }
 
@@ -31,7 +31,7 @@ color: black;
     width: 100%;
     height: 100%;
     display: flex;
-//    justify-content: center;
+ /*justify-content: center;*/
     align-items: center;
     flex-direction: column;
 }
@@ -39,22 +39,22 @@ color: black;
 .centerWeb {
     width: auto;
     height: auto;
-    //background: #fff8e0;
+    /*background: #fff8e0;*/
     display: flex;
     box-sizing: border-box;
     padding-left: 6%;
     padding-right: 6%;
-    //padding-top: 1%;
+    /*padding-top: 1%;*/
     padding-bottom: 11%;
-    //flex-direction: row;
-    //justify-content: space-around;
+    /*flex-direction: row;
+    justify-content: space-around;*/
     flex-flow: row wrap;
 }
 
 .newCreditHeader {
     width: 100%;
     height: 10%;
-    //background: rgba(0, 0, 0, .3);
+    /*background: rgba(0, 0, 0, .3);*/
     display: flex;
     box-sizing: border-box;
     justify-content: center;
@@ -67,16 +67,17 @@ color: black;
     height: 120px;
     box-sizing: border-box;
     display: flex;
+    /*display: inline-block;*/
     align-items: center;
     justify-content: space-around;
     padding: 20px;
-    //border-radius: 2px;
-    //background: #999999;
+    /*border-radius: 2px;*/
+    /*background: #999999;*/
     background: #fffced;
-    //color: white;
+    /*color: white;*/
     color: black;
     border: 1px solid black;
-    //margin-bottom: 5%;
+    /*margin-bottom: 5%;*/
     margin-right: 1%;
     margin-left: 1%;
     margin-bottom: 20px;
@@ -96,7 +97,7 @@ color: black;
     position: fixed;
     left: 0;
     bottom: 0;
-//    background-color: #962d40;
+  /*  background-color: #962d40;*/
 clear: both;
 background: none;
 border: 2px solid black;
@@ -108,7 +109,7 @@ border: 2px solid black;
     height: 75px;
     background: none;
     border: 4px dashed white;
-    //align-self: first baseline;
+    /*align-self: first baseline;*/
 }
 
 .subCourse {
@@ -137,12 +138,12 @@ border: 2px solid black;
     box-sizing: border-box;
     width: 50px;
     height: 50px;
-    //background: #529b5e;
-    //background: #7fe88d;
+    /*background: #529b5e;
+    background: #7fe88d;*/
     background: #c1ffd5;
     color: black;
     border: 2px solid black;
-    //border-radius: 4px;
+    /*border-radius: 4px;*/
     font-size: 40px;
 }
 
@@ -150,8 +151,8 @@ border: 2px solid black;
     width: 80%;
     height: 50px;
     margin-right: 5%;
-    //border: none;
-//    background: #cce2ff;
+    /*border: none;*/
+  /*  background: #cce2ff;*/
 background: #dbeaff;
 color: black;
     font-size: 30px;
@@ -159,5 +160,5 @@ color: black;
     box-sizing: border-box;
     padding: 1%;
     border: 2px solid black;
-    //border-radius: 4px;
+    /*border-radius: 4px;*/
 }
