@@ -13,7 +13,7 @@ var courseCredits = [];
 
 var courseNamesData = [];
 $.ajax({
-  url: "courseNames"
+  url: "CourseNames"
 }).done(function (data) {
   var courseNamesRaw = data + "";
   courseNamesData = courseNamesRaw.split(",");
@@ -25,21 +25,21 @@ $.ajax({
 
 var courseLengthsData = [];
 $.ajax({
-  url: "courseLengths"
+  url: "CourseLengths"
 }).done(function(data) {
   newArray(data, courseLengthsData, courseLengths);
 });
 
 var courseTypesData = [];
 $.ajax({
-  url: "courseTypes"
+  url: "CourseTypes"
 }).done(function(data) {
   newArray(data, courseTypesData, courseTypes);
 });
 
 var courseCreditsData = [];
 $.ajax({
-  url: "courseCredits"
+  url: "CourseCredits"
 }).done(function(data) {
   newArray(data, courseCreditsData, courseCredits);
 });
